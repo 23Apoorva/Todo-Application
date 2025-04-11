@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.completeTodo {
+  text-decoration: line-through;
+}
+/*===== Variable Define =====*/
+:root {
+  --primary-color: #1b2e35;
+  --secondry-color: #8e5093;
+  --white-color: #fff;
+  --gray-color: #ffffffa1;
+  --black-color: #0a0a0a;
+}
+
+body {
+  width: 100%;
+  min-height: 500px;
+  height: 100vh;
+  background: url("bg-1.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TodoWrapper {
+  background: var(--primary-color);
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 1.0714rem rgba(0, 0, 0, 0.1);
+  max-height: 30rem;
+  overflow-y: auto;
+}
+
+h1 {
+  color: var(--white-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid var(--secondry-color);
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: var(--white-color);
+}
+
+.todo-input::placeholder {
+  color: var(--gray-color);
+}
+
+.todo-btn {
+  background: var(--secondry-color);
+  color: var(--white-color);
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--secondry-color);
+  color: var(--white-color);
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.error {
+  color: var(--white-color); /* text color matches your theme */
+  background-color: var(--secondary-color); /* same as buttons/background */
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.delete-btn {
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 1rem;
+  
+}
